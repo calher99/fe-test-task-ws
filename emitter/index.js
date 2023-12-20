@@ -12,4 +12,4 @@ const createRandomUser = () => ({
     score: faker.number.int({ min: 0, max: 10000 }),
 });
 
-setInterval(() => io.emit("userData", createRandomUser()), 500);
+setInterval(() => io.emit("userData", createRandomUser()), 5000);
